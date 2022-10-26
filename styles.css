@@ -20,12 +20,13 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 19.6rem;
+  width: 19rem;
   height: 4rem;
   background-color: black;
   color: lightgrey;
   font-size: 1.8rem;
   border: 0.2rem solid #66fcf1;
+  padding-right: 0.6rem;
 }
 
 .row1,
