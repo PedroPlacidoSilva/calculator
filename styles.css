@@ -3,7 +3,27 @@ body {
   margin: 0;
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Backgound color */
   background-color: #1b3354;
+  overflow: visible !important;
+  background: -webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+  background: -moz-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+  background: -ms-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+  background: -o-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+  background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+}
+
+.header {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 900;
+  /* Sets the width and center */
+  width: 500px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 1.2em 0.3em 1.2em 0.3em;
+  color: white;
 }
 
 .calculator {
@@ -12,20 +32,18 @@ body {
   margin-right: auto;
   width: 20rem;
   height: 25rem;
-
-  background-color: #66fcf1;
 }
 
 .screen {
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 19rem;
+  width: 19.4rem;
   height: 4rem;
   background-color: black;
   color: lightgrey;
   font-size: 1.8rem;
-  border: 0.2rem solid #66fcf1;
+  border-radius: 1rem;
   padding-right: 0.6rem;
 }
 
@@ -35,7 +53,7 @@ body {
 .row4 {
   /* flex did not change the layout because the container is already horizontal. It takes all space between buttons */
   display: flex;
-  background-color: #66fcf1;
+  /* background-color: #66fcf1; */
 }
 
 .number {
@@ -46,4 +64,5 @@ body {
   background-color: black;
   color: #66fcf1;
   margin: 1px;
+  border-radius: 15%;
 }
