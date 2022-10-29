@@ -47,13 +47,13 @@ body {
   padding-right: 0.6rem;
 }
 
+.row0,
 .row1,
 .row2,
 .row3,
 .row4 {
   /* flex did not change the layout because the container is already horizontal. It takes all space between buttons */
   display: flex;
-  /* background-color: #66fcf1; */
 }
 
 .number {
@@ -67,7 +67,18 @@ body {
   border-radius: 15%;
 }
 
-.number:hover {
+.clear {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: black;
+  color: #66fcf1;
+  margin: 1px;
+  border-radius: 1rem;
+}
+
+.number:hover,
+.clear:hover {
   color: #001f3f;
   background-color: #034f84;
 }
