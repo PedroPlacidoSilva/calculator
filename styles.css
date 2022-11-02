@@ -67,7 +67,8 @@ body {
   border-radius: 15%;
 }
 
-.clear {
+#clear1,
+#clear2 {
   width: 10rem;
   height: 3rem;
   font-size: 1.5rem;
@@ -78,7 +79,8 @@ body {
 }
 
 .number:hover,
-.clear:hover {
+#clear1:hover,
+#clear1:hover {
   color: #001f3f;
   background-color: #034f84;
 }
