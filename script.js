@@ -45,6 +45,31 @@ function getValue(btnValue) {
     secondNumberArr = [];
     // Update total variable to zero
     total = "";
+  } else if (btnValue == "D") {
+    if (secondNumberArr.length > 1) {
+      // If number 2 has 2 or more numbers delete the last one and show on the screen
+      secondNumberArr.pop();
+      screenValue.textContent = secondNumberArr.join("");
+    } else if (secondNumberArr.length == 1) {
+      // If number 2 has only one number update the number to 0
+      secondNumberArr.pop();
+      screenValue.textContent = 0;
+    } else if (
+      secondNumberArr.length == 0 &&
+      (operation == undefined || operation == "=")
+    ) {
+      // If the operation is undefined or "=" and there is no second nummber
+      if (firstNumberArr.length > 1) {
+        // If first number > 1 delete the last number
+        firstNumberArr.pop();
+        screenValue.textContent = firstNumberArr.join("");
+      }
+      if (firstNumberArr.length == 1) {
+        // If first number == 1 update the last number to "0"
+        firstNumberArr.pop();
+        screenValue.textContent = 0;
+      }
+    }
   } else if (btnValue == "-" && firstNumberArr.length == 0) {
     //If user press minus sign and there is no number inputed update first number to "0"
     firstNumberArr.push(0);
