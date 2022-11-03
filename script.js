@@ -116,6 +116,15 @@ function getValue(btnValue) {
     }
     operation = btnValue;
   }
+  // Corrects the number if the user inputs two 0 numbers in a row
+  if (firstNumberArr[0] == "0" && firstNumberArr[1] == "0") {
+    firstNumberArr.pop();
+    screenValue.textContent = firstNumberArr.join("");
+  }
+  if (secondNumberArr[0] == "0" && secondNumberArr[1] == "0") {
+    secondNumberArr.pop();
+    screenValue.textContent = secondNumberArr.join("");
+  }
 }
 
 for (const btn of btns) {
